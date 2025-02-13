@@ -60,10 +60,10 @@ const opacity = document.querySelector ('#opacity')
 opacity.addEventListener ('click', function() {
   const squares = document.querySelectorAll('.square')
   squares.forEach(square => {
-    let opacityLevel = 0
+    let opacityLevel = 0.2
     square.addEventListener('mouseover', function () {
       if (opacityLevel < 1) {
-        opacityLevel += 0.1
+        opacityLevel += 0.2
         square.style.opacity = opacityLevel
       }
     });
